@@ -8,7 +8,6 @@ const rl = readline.createInterface({
 
 let calculator = new DutyCalculator();
 
-// Mapping object for goods groups
 let goodsGroupMap: { [key: string]: GoodsGroup } = {
     'A': GoodsGroup.A,
     'B': GoodsGroup.B,
@@ -16,7 +15,8 @@ let goodsGroupMap: { [key: string]: GoodsGroup } = {
 };
 
 function askQuestion() {
-    rl.question('Введіть суму імпорту та групу товарів (або введіть "вихід" для виходу): ', (answer) => {
+    rl.question('Введіть суму імпорту та групу товарів (A, B, C) через space (або введіть "вихід" для виходу): ',
+        (answer) => {
         if (answer.toLowerCase() === 'вихід') {
             rl.close();
         } else {
