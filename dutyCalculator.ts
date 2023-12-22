@@ -1,13 +1,21 @@
-export function sumOfArithmeticProgression(n: number): number | null {
-    if(n < 0) return null;
-
-    if (!Number.isInteger(n)) {
-        console.log('Помилка: n повинне бути цілим числом.');
-        return null;
-    }
-
-    let a = 2;
-    let d = 2;
-    let sum = n / 2 * (2 * a + (n - 1) * d);
-    return sum;
+export enum GoodsGroup {
+    A = 0.1,
+    B = 0.2,
+    C = 0.3
 }
+
+export const THROW_NEGATIVE_ERROR = "Від'ємне число";
+export const THROW_UNDEFINED_GROUP_ERROR = "Невідома група";
+
+export class DutyCalculator {
+    calculateDuty(importAmount: number, goodsGroup: GoodsGroup): number {
+        if (importAmount < 0) {
+            throw new Error(THROW_NEGATIVE_ERROR);
+        }
+        if (typeof goodsGroup === 'undefined') {
+            throw new Error(THROW_UNDEFINED_GROUP_ERROR);
+        }
+        return importAmount * goodsGroup;
+    }
+}
+
