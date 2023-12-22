@@ -1,4 +1,4 @@
-import {DutyCalculator, GoodsGroup} from './DutyCalculator.ts';
+import {DutyCalculator, GoodsGroup} from './dutyCalculator.ts';
 
  const THROW_NEGATIVE_ERROR = "Від'ємне число";
  const THROW_UNDEFINED_GROUP_ERROR = "Невідома група";
