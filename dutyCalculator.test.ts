@@ -1,5 +1,7 @@
-import {DutyCalculator, GoodsGroup, THROW_NEGATIVE_ERROR, THROW_UNDEFINED_GROUP_ERROR} from './DutyCalculator.ts';
+import {DutyCalculator, GoodsGroup} from './DutyCalculator.ts';
 
+ const THROW_NEGATIVE_ERROR = "Від'ємне число";
+ const THROW_UNDEFINED_GROUP_ERROR = "Невідома група";
 
 describe('DutyCalculator', () => {
     let calculator: DutyCalculator;
