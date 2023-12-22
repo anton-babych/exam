@@ -9,6 +9,8 @@ export const THROW_UNDEFINED_GROUP_ERROR = "Невідома група";
 
 export class DutyCalculator {
     calculateDuty(importAmount: number, goodsGroup: GoodsGroup): number {
+        console.log('Anton Babych')
+
         if (importAmount < 0) {
             throw new Error(THROW_NEGATIVE_ERROR);
         }
