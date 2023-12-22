@@ -1,4 +1,4 @@
-import {DutyCalculator, GoodsGroup, THROW_NEGATIVE_ERROR, THROW_UNDEFINED_GROUP_ERROR} from './DutyCalculator';
+import {DutyCalculator, GoodsGroup, THROW_NEGATIVE_ERROR, THROW_UNDEFINED_GROUP_ERROR} from './DutyCalculator.ts';
 
 
 describe('DutyCalculator', () => {
