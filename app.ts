@@ -1,5 +1,5 @@
 import * as readline from 'readline';
-import { DutyCalculator, GoodsGroup } from './dutyCalculator.ts';
+import { DutyCalculator, GoodsGroup } from './dutyCalculator';
 
 const rl = readline.createInterface({
     input: process.stdin,
